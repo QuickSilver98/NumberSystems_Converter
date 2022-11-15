@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class Main {
 
     public static void main(String[] args) {
-        int choice;
+        String choice;
         int number = 0, operation;
         String hex = null;
         Formula soupObject = new Formula();
@@ -59,10 +59,10 @@ public class Main {
             }
 
             System.out.println();
-            System.out.println("Would you like to perform another operation?(Enter 1 for yes)");
-            choice = input.nextInt();
+            System.out.println("Continue?[y/n]");
+            choice = input.next();
 
-        }while (choice == 1);
+        }while (choice.equals("y"));
         }
 
     }
